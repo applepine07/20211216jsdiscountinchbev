@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單位換算</title>
+    <!-- bootstrp要用的 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- fontawesome要用的 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- 
+    hw JS 20211215 上課練習
+    1.Input
+      ①．總價
+      ②．折扣
+      ③．現金折抵
+    2．result
+        1000*0.79-100
+        790
+        100
+    3．>500 才可以做折扣
+    4．折抵時總價要大於200元才能用現金折扣
+    =====
+    原價:1000
+    折扣:
+    現金折抵多少:
+    省了多少:
+    本次付款總價:
+
+ -->
+
+    <div class="container">
+        <h2>單位換算</h2>
+        <form action="" id="myForm">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="num1">公分</label>
+                        <input type="text" class="form-control" id="num1" placeholder="Enter number" name="num1">
+                        <p id="cmErr" class="text-danger"></p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="num2">英吋</label>
+                        <input type="number" class="form-control" id="num2" placeholder="Enter number" name="num2">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="mm">平方公尺</label>
+                        <input type="number" class="form-control" id="mm" placeholder="Enter number" name="mm">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="ping">坪</label>
+                        <input type="number" class="form-control" id="ping" placeholder="Enter number" name="ping">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- bootstrap需要 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/inch.js"></script>
+</body>
+
+</html>

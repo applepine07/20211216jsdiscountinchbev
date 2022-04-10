@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算飲料費用</title>
+    <!-- bootstrp要用的 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- fontawesome要用的 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <h2>計算飲料費用</h2>
+        <form action="" id="myForm">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="kafemoney">咖啡一杯單價</label>
+                        <input type="number" class="form-control" id="kafemoney" placeholder="Enter number" name="kafemoney" value="10">
+                        <p id="cmErr" class="text-danger"></p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="kafecup">咖啡訂購杯數</label>
+                        <input type="number" class="form-control" id="kafecup" placeholder="Enter number" name="kafecup">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="flowermoney">花茶一杯單價</label>
+                        <input type="number" class="form-control" id="flowermoney" placeholder="Enter number" name="flowermoney" value="100">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="flowercup">花茶訂購杯數</label>
+                        <input type="number" class="form-control" id="flowercup" placeholder="Enter number" name="flowercup">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="tapiocamoney">珍奶一杯單價</label>
+                        <input type="number" class="form-control" id="tapiocamoney" placeholder="Enter number" name="tapiocamoney"  value="1000">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="tapiocacup">珍奶訂購杯數</label>
+                        <input type="number" class="form-control" id="tapiocacup" placeholder="Enter number" name="tapiocacup">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-primary" id="resultBtn">送出</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">            
+                <!-- div -->
+                <div id="result">
+                
+                </div>
+                <!-- div end -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- bootstrap需要 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/newbeverage.js"></script>
+</body>
+</html>

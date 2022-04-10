@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算飲料費用-教師版</title>
+    <!-- bootstrp要用的 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- fontawesome要用的 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 20vw;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h2>計算飲料費用</h2>
+        <form action="" id="myForm">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="kafemoney">咖啡一杯單價</label>
+                                <input type="number" class="form-control" id="kafemoney" placeholder="Enter number"
+                                    name="kafemoney" value="10">
+                            </div>
+                            <div class="form-group">
+                                <label for="kafecup">咖啡訂購杯數</label>
+                                <input type="number" class="form-control" id="kafecup" placeholder="Enter number"
+                                    name="kafecup">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1609520210683-c9e5f0ae8f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="flowermoney">花茶一杯單價</label>
+                                <input type="number" class="form-control" id="flowermoney" placeholder="Enter number"
+                                    name="flowermoney" value="100">
+                            </div>
+                            <div class="form-group">
+                                <label for="flowercup">花茶訂購杯數</label>
+                                <input type="number" class="form-control" id="flowercup" placeholder="Enter number"
+                                    name="flowercup">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1541696490-8744a5dc0228?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="tapiocamoney">珍奶一杯單價</label>
+                                <input type="number" class="form-control" id="tapiocamoney" placeholder="Enter number"
+                                    name="tapiocamoney" value="1000">
+                            </div>
+                            <div class="form-group">
+                                <label for="tapiocacup">珍奶訂購杯數</label>
+                                <input type="number" class="form-control" id="tapiocacup" placeholder="Enter number"
+                                    name="tapiocacup">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="row mt-4">
+                <button type="submit" class="btn btn-primary" id="resultBtn">送出</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <!-- div -->
+                <div id="result">
+
+                </div>
+                <!-- div end -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- bootstrap需要 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/newbeverage.js"></script>
+</body>
+
+</html>
